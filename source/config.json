@@ -1,0 +1,43 @@
+{
+  "credentials": "386ecc70-9045-11ea-9aca-234ce0d47534:4a3ad8514a6d40d3bcb555c3f9fd40cb",
+  "url": "http://localhost/",
+  "settings": {
+    "qualityOfService": 1
+  },
+  "payment": {
+    "fixCost": 0,
+    "isFixCostOnly": false
+  },
+  "profile": {
+    "name": "Example Source",
+    "location": {
+      "latitude": 52.5297268,
+      "longitude": 13.400391
+    }
+  },
+  "privKey": "./env/key.pem",
+  "schema": {
+    "input": "./env/schema/input.json",
+    "output": "./env/schema/output.json"
+  },
+  "info": {
+    "worker": {
+      "description": "./env/description/worker.md",
+      "tags": [
+        "image processing"
+      ]
+    },
+    "input": {
+      "description": "./env/description/input.md",
+      "tags": [
+        "h"
+      ]
+    },
+    "output": {
+      "description": "./env/description/output.md",
+      "tags": [
+        ""
+      ]
+    }
+  }
+}
