@@ -1,8 +1,9 @@
 {
-  "credentials": "386ecc70-9045-11ea-9aca-234ce0d47534:4a3ad8514a6d40d3bcb555c3f9fd40cb",
+  "credentials": "5d7e05e0-9a76-11ea-b49e-55106dd36164:7fae80dc11664fdd8513af089b6a746e",
   "url": "http://localhost/",
   "settings": {
-    "qualityOfService": 1
+    "qualityOfService": 1,
+    "messageRetries": 1
   },
   "payment": {
     "fixCost": 0,
