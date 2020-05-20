@@ -1,9 +1,8 @@
 {
-  "credentials": "5d7e05e0-9a76-11ea-b49e-55106dd36164:7fae80dc11664fdd8513af089b6a746e",
-  "url": "http://localhost/",
+  "credentials": "9bf04e50-9a80-11ea-913a-e75c86960ba1:cc4fb8907fbb4cc2aa92d7689d43b93d",
+  "url": "https://partner.wzl.senseering.net/",
   "settings": {
-    "qualityOfService": 1,
-    "messageRetries": 1
+    "qualityOfService": 1
   },
   "payment": {
     "fixCost": 0,
