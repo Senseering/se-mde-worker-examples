@@ -2,7 +2,9 @@
   "credentials": "9bf04e50-9a80-11ea-913a-e75c86960ba1:cc4fb8907fbb4cc2aa92d7689d43b93d",
   "url": "https://partner.wzl.senseering.net/",
   "settings": {
-    "qualityOfService": 1
+    "qualityOfService": 1,
+    "messageRetries": 3,
+    "messageTimeout": 200000
   },
   "payment": {
     "fixCost": 0,
