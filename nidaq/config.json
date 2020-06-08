@@ -1,6 +1,6 @@
 {
-  "credentials": "f2e0ec20-8f94-11ea-a2a5-81e89185deb0:b6ebf9ce2e954484bba6dc17e7944ad4",
-  "url": "https://rotterbruch-12.wzl.senseering.net/",
+  "credentials": "29b7e3d0-a970-11ea-9e55-5dc45ccbfa46:d978246ee25040cdb1862db68f8d1315",
+  "url": "https://partner.spaicer.senseering.net/",
   "settings": {
     "qualityOfService": 1
   },
@@ -9,7 +9,7 @@
     "isFixCostOnly": false
   },
   "profile": {
-    "name": "NI-Daq importer",
+    "name": "AE Analytics",
     "location": {
       "latitude": 52.5297268,
       "longitude": 13.400391

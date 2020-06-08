@@ -5,39 +5,44 @@ const split = require("split")
 
 let config = './config.json'
 
-let worker = new Worker()
-var parseStream = split("\n");
-
+let published = 0 
+let received = 0;
 (async function () {
-    await worker.connect(config)
-    let server = net.createServer(function (socket) {
+    //await worker.connect(config)
+    let server = net.createServer(async function (socket) {
+        console.log("AE Client Connected")
+                
+        let worker = new Worker()
+        var parseStream = split("\n");
 
+        let connectPromise =  worker.connect(config)
+        console.log("Worker registered and ready to publish")
+      
 
         socket.on('data', async (data) => {
+            await connectPromise
             parseStream.write(data);
         });
+        
+        socket.on("close", async () => {
+            await worker.disconnect()
+            delete parseStream
+            delete worker
+            console.log("AE client disconnected and deleted")
+        })
+
 
         parseStream.on('data', async function (obj) {
             try {
                 let msg = JSON.parse(obj.replace(/'/g, "\""))
-                console.log(Object.keys(msg))
 
-                await worker.publish({
-                    'pos': msg.pos,
-                    'FFT': msg.FFT,
-                    'max_amp_rechts': msg.max_amp_rechts,
-                    'max_amp_links': msg.max_amp_links,
-                    'stdDev_rechts': msg.stdDev_rechts,
-                    'stdDev_links': msg.stdDev_links,
-                    'skew_rechts': msg.skew_rechts,
-                    'skew_links': msg.skew_links,
-                    'kurtosis_rechts': msg.kurtosis_rechts,
-                    'kurtosis_links': msg.kurtosis_links,
-                    'AE_rechts': msg.AE_rechts,
-                    'AE_rinks': msg.AE_rinks
-                })
+                received++
+                await worker.publish(msg)
+                published++
+
+                console.log("published: " + published +" \t received: "+ received +"\t pending: "+ (received-published))
             } catch (err) {
-                console.log("error on parsing")
+                console.log(err)
             }
         })
     })
