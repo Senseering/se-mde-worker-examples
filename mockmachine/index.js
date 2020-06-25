@@ -4,6 +4,13 @@ let config = './config.json';
 
 let worker = new Worker();
 
+function sleep(ms) {
+    return new Promise((resolve) => {
+        setTimeout(resolve, ms);
+    });
+}   
+
+
 (async function () {
     await worker.connect(config)
     let test = {
@@ -18,6 +25,7 @@ let worker = new Worker();
         "Heat_Anomaly": (Math.random() < 0.5) ? 1 : 0
     };
     while (true) {
+        await sleep(5000)
         test.Quality += ((Math.random() - 0.5) * 25)
         test.Avg_Force += ((Math.random() - 0.5) * 0.2)
         test.Max_Force += ((Math.random() - 0.5) * 25)
@@ -28,7 +36,6 @@ let worker = new Worker();
         test.Power_Anomaly = (Math.random() < 0.5) ? 1 : 0
         test.Heat_Anomaly = (Math.random() < 0.5) ? 1 : 0
         await worker.publish(test)
-
     }
 })();
 
