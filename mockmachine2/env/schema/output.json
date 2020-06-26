@@ -1,0 +1,101 @@
+{
+    "definitions": {},
+    "$schema": "http://json-schema.org/draft-07/schema#",
+    "$id": "http://example.com/root.json",
+    "type": "object",
+    "title": "The Root Schema",
+    "required": [
+        "Quality",
+        "Avg_Force",
+        "Max_Force",
+        "Avg_Temperature",
+        "Max_Temperature",
+        "Avg_Frequency",
+        "Max_Frequency",
+        "Power_Anomaly",
+        "Heat_Anomaly"
+    ],
+    "properties": {
+        "Quality": {
+            "$id": "#/properties/Quality",
+            "type": "number",
+            "title": "The Quality Schema",
+            "default": 0.0,
+            "examples": [
+                98.58141830198143
+            ]
+        },
+        "Avg_Force": {
+            "$id": "#/properties/Avg_Force",
+            "type": "number",
+            "title": "The Avg_force Schema",
+            "default": 0.0,
+            "examples": [
+                0.6125868480692526
+            ]
+        },
+        "Max_Force": {
+            "$id": "#/properties/Max_Force",
+            "type": "number",
+            "title": "The Max_force Schema",
+            "default": 0.0,
+            "examples": [
+                0.8578937929082309
+            ]
+        },
+        "Avg_Temperature": {
+            "$id": "#/properties/Avg_Temperature",
+            "type": "number",
+            "title": "The Avg_temperature Schema",
+            "default": 0.0,
+            "examples": [
+                227.7256316850587
+            ]
+        },
+        "Max_Temperature": {
+            "$id": "#/properties/Max_Temperature",
+            "type": "number",
+            "title": "The Max_temperature Schema",
+            "default": 0.0,
+            "examples": [
+                271.34737754726893
+            ]
+        },
+        "Avg_Frequency": {
+            "$id": "#/properties/Avg_Frequency",
+            "type": "number",
+            "title": "The Avg_frequency Schema",
+            "default": 0.0,
+            "examples": [
+                756.5594541257028
+            ]
+        },
+        "Max_Frequency": {
+            "$id": "#/properties/Max_Frequency",
+            "type": "number",
+            "title": "The Max_frequency Schema",
+            "default": 0.0,
+            "examples": [
+                952.574919519514
+            ]
+        },
+        "Power_Anomaly": {
+            "$id": "#/properties/Power_Anomaly",
+            "type": "integer",
+            "title": "The Power_anomaly Schema",
+            "default": 0,
+            "examples": [
+                1
+            ]
+        },
+        "Heat_Anomaly": {
+            "$id": "#/properties/Heat_Anomaly",
+            "type": "integer",
+            "title": "The Heat_anomaly Schema",
+            "default": 0,
+            "examples": [
+                0
+            ]
+        }
+    }
+}

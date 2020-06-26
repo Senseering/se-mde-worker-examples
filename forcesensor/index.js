@@ -1,10 +1,10 @@
-let Worker = require('@senseering/worker')
+let Worker = require('../../worker_js')
 let fs = require('fs')
 
 let config = './config.json'
 
 let punchforce = new Worker();
-const folder = "../../../../data/data"//data has to be placed in folder outside of this repo
+const folder = "../../../../data/data/"//data has to be placed in folder outside of this repo
 
 const processCount = 2742
 let allSensors = {}

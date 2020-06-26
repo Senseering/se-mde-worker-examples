@@ -1,6 +1,6 @@
 {
-  "credentials": "9bf04e50-9a80-11ea-913a-e75c86960ba1:cc4fb8907fbb4cc2aa92d7689d43b93d",
-  "url": "https://rb.wzl.senseering.net/",
+  "credentials": "e8344950-b732-11ea-8fb4-432d7f33d843:01d36951180d41678e02659923c16728",
+  "url": "https://mwh.wzl.senseering.net/",
   "settings": {
     "qualityOfService": 1,    
     "messageRetries": 3,
@@ -11,10 +11,10 @@
     "isFixCostOnly": false
   },
   "profile": {
-    "name": "Hydraulische Umformpresse Schulter HPX 400",
+    "name": "DMG MORI NZX 1500-800 STY3",
     "location": {
-      "latitude": 52.5297268,
-      "longitude": 13.400391
+      "latitude": 50.783911,
+      "longitude": 6.0454793
     }
   },
   "privKey": "./env/key.pem",

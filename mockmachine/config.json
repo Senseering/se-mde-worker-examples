@@ -1,20 +1,20 @@
 {
-  "credentials": "9bf04e50-9a80-11ea-913a-e75c86960ba1:cc4fb8907fbb4cc2aa92d7689d43b93d",
+  "credentials": "3a80c6e0-b731-11ea-9c61-1505b08c1f67:baeeedab9dc9414c932e2d10829da474",
   "url": "https://rb.wzl.senseering.net/",
   "settings": {
-    "qualityOfService": 1,    
+    "qualityOfService": 1,
     "messageRetries": 3,
     "messageTimeout": 200000
   },
   "payment": {
     "fixCost": 0,
-    "isFixCostOnly": false
+    "isFixCostOnly": true
   },
   "profile": {
-    "name": "Hydraulische Umformpresse Schulter HPX 400",
+    "name": "Umformpresse Schuler HPX 400",
     "location": {
-      "latitude": 52.5297268,
-      "longitude": 13.400391
+      "latitude": 50.7797776,
+      "longitude": 6.1256271
     }
   },
   "privKey": "./env/key.pem",

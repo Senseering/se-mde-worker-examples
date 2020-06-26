@@ -1,8 +1,8 @@
 {
-  "credentials": "bb0e52a0-b731-11ea-9c61-1505b08c1f67:76f0de346c794328876a1d44d88d31c7",
-  "url": "https://rb.wzl.senseering.net/",
+  "credentials": "9dea5b20-b780-11ea-b599-d946df5d37ac:7e293020e39c42d19c106b7864d8d835",
+  "url": "https://pcl.wzl.senseering.net/",
   "settings": {
-    "qualityOfService": 1,    
+    "qualityOfService": 1,
     "messageRetries": 3,
     "messageTimeout": 200000
   },
@@ -11,10 +11,10 @@
     "isFixCostOnly": false
   },
   "profile": {
-    "name": "XFT2500 Speed Force Sensor",
+    "name": "Studer S41",
     "location": {
-      "latitude": 50.7797776,
-      "longitude": 6
+      "latitude": 50.7798435,
+      "longitude": 6.0670101999999995
     }
   },
   "privKey": "./env/key.pem",
@@ -26,7 +26,10 @@
     "worker": {
       "description": "./env/description/worker.md",
       "tags": [
-        "image processing"
+        "studer",
+        "s41",
+        "pcl",
+        "rwth"
       ]
     },
     "input": {
