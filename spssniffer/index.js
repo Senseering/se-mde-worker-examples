@@ -3,9 +3,10 @@
 const express = require('express')
 const cors = require('cors')
 const bodyParser = require('body-parser');
+const fs = require('fs')
 
 
-let Worker = require('@senseering/worker')
+let Worker = require('../../worker_js')
 let worker = new Worker();
 
 let config = './config.json';
@@ -27,7 +28,7 @@ server.use(bodyParser.urlencoded({ extended: true }));
         res.status(200).send()
         await worker.publish(spsdata)
     });
-    server.listen(3006, () => console.log(`Node listening on port 3006`))
+    server.listen(3001, () => console.log(`Node listening on port 3001  `))
     //await worker.disconnect()
 })();
 
