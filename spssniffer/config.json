@@ -1,15 +1,17 @@
 {
-  "credentials": "35ed0320-9a83-11ea-913a-e75c86960ba1:722fab653bc444299a77fea5330a2869",
-  "url": "https://partner.wzl.senseering.net/",
+  "credentials": "5393bb80-c4ef-11ea-9cb6-d5081ee6c157:acdcd7730aa24031a2e0a6349e99cc7f",
+  "url": "https://speedtest.wzl.senseering.net/",
   "settings": {
-    "qualityOfService": 1
+    "qualityOfService": 1,
+    "messageRetries": 3,
+    "messageTimeout": 5000
   },
   "payment": {
     "fixCost": 0,
     "isFixCostOnly": false
   },
   "profile": {
-    "name": "SPS XFT 2500 Speed",
+    "name": "SPS XFT 2500 Speed v3.0.0",
     "location": {
       "latitude": 52.5297268,
       "longitude": 13.400391
