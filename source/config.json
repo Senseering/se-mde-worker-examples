@@ -1,17 +1,19 @@
 {
-  "credentials": "9bf04e50-9a80-11ea-913a-e75c86960ba1:cc4fb8907fbb4cc2aa92d7689d43b93d",
-  "url": "https://partner.wzl.senseering.net/",
+  "credentials": "2f708090-c502-11ea-85dd-6990d19a77c0:1dd4bb3a2b474b9a9c94816b786cddae",
+  "url": "https://iota.wzl.senseering.net/",
   "settings": {
-    "qualityOfService": 1
+    "qualityOfService": 1,
+    "messageRetries": 3,
+    "messageTimeout": 200000
   },
   "payment": {
-    "fixCost": 0,
-    "isFixCostOnly": false
+    "fixCost": 24,
+    "isFixCostOnly": true
   },
   "profile": {
-    "name": "Example Source",
+    "name": "hallowelt2",
     "location": {
-      "latitude": 52.5297268,
+      "latitude": 13.5297268,
       "longitude": 13.400391
     }
   },
