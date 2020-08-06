@@ -5,9 +5,15 @@ const sleep = ms => new Promise(resolve => setTimeout(resolve, ms))
 
 let speed_test = new Worker()
 let config = './config.json';
+let options = './options.json'
 
 (async () => {
-
+  try{
+    await speedTest(options)
+  } catch (err) {
+    debug(err)
+  }
+  
   let data_test 
   let data  
   do {
