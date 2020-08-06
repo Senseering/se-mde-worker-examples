@@ -1,0 +1,190 @@
+{
+    "$schema": "http://json-schema.org/draft-07/schema",
+    "$id": "http://example.com/example.json",
+    "type": "object",
+    "title": "The root schema",
+    "description": "The root schema comprises the entire JSON document.",
+    "default": {},
+    "examples": [
+        {
+            "ping": {
+                "jitter": 3.458,
+                "latency": 9.97
+            },
+            "download": {
+                "bandwidth": 2518881,
+                "bytes": 21732704,
+                "elapsed": 8911
+            },
+            "upload": {
+                "bandwidth": 2227647,
+                "bytes": 15351840,
+                "elapsed": 6917
+            },
+            "packetLoss": 0
+        }
+    ],
+    "required": [
+        "ping",
+        "download",
+        "upload",
+        "packetLoss"
+    ],
+    "properties": {
+        "ping": {
+            "$id": "#/properties/ping",
+            "type": "object",
+            "title": "The ping schema",
+            "description": "An explanation about the purpose of this instance.",
+            "default": {},
+            "examples": [
+                {
+                    "jitter": 3.458,
+                    "latency": 9.97
+                }
+            ],
+            "required": [
+                "jitter",
+                "latency"
+            ],
+            "properties": {
+                "jitter": {
+                    "$id": "#/properties/ping/properties/jitter",
+                    "type": "number",
+                    "title": "The jitter schema",
+                    "description": "An explanation about the purpose of this instance.",
+                    "default": 0.0,
+                    "examples": [
+                        3.458
+                    ]
+                },
+                "latency": {
+                    "$id": "#/properties/ping/properties/latency",
+                    "type": "number",
+                    "title": "The latency schema",
+                    "description": "An explanation about the purpose of this instance.",
+                    "default": 0.0,
+                    "examples": [
+                        9.97
+                    ]
+                }
+            },
+            "additionalProperties": true
+        },
+        "download": {
+            "$id": "#/properties/download",
+            "type": "object",
+            "title": "The download schema",
+            "description": "An explanation about the purpose of this instance.",
+            "default": {},
+            "examples": [
+                {
+                    "bandwidth": 2518881,
+                    "bytes": 21732704,
+                    "elapsed": 8911
+                }
+            ],
+            "required": [
+                "bandwidth",
+                "bytes",
+                "elapsed"
+            ],
+            "properties": {
+                "bandwidth": {
+                    "$id": "#/properties/download/properties/bandwidth",
+                    "type": "integer",
+                    "title": "The bandwidth schema",
+                    "description": "An explanation about the purpose of this instance.",
+                    "default": 0,
+                    "examples": [
+                        2518881
+                    ]
+                },
+                "bytes": {
+                    "$id": "#/properties/download/properties/bytes",
+                    "type": "integer",
+                    "title": "The bytes schema",
+                    "description": "An explanation about the purpose of this instance.",
+                    "default": 0,
+                    "examples": [
+                        21732704
+                    ]
+                },
+                "elapsed": {
+                    "$id": "#/properties/download/properties/elapsed",
+                    "type": "integer",
+                    "title": "The elapsed schema",
+                    "description": "An explanation about the purpose of this instance.",
+                    "default": 0,
+                    "examples": [
+                        8911
+                    ]
+                }
+            },
+            "additionalProperties": true
+        },
+        "upload": {
+            "$id": "#/properties/upload",
+            "type": "object",
+            "title": "The upload schema",
+            "description": "An explanation about the purpose of this instance.",
+            "default": {},
+            "examples": [
+                {
+                    "bandwidth": 2227647,
+                    "bytes": 15351840,
+                    "elapsed": 6917
+                }
+            ],
+            "required": [
+                "bandwidth",
+                "bytes",
+                "elapsed"
+            ],
+            "properties": {
+                "bandwidth": {
+                    "$id": "#/properties/upload/properties/bandwidth",
+                    "type": "integer",
+                    "title": "The bandwidth schema",
+                    "description": "An explanation about the purpose of this instance.",
+                    "default": 0,
+                    "examples": [
+                        2227647
+                    ]
+                },
+                "bytes": {
+                    "$id": "#/properties/upload/properties/bytes",
+                    "type": "integer",
+                    "title": "The bytes schema",
+                    "description": "An explanation about the purpose of this instance.",
+                    "default": 0,
+                    "examples": [
+                        15351840
+                    ]
+                },
+                "elapsed": {
+                    "$id": "#/properties/upload/properties/elapsed",
+                    "type": "integer",
+                    "title": "The elapsed schema",
+                    "description": "An explanation about the purpose of this instance.",
+                    "default": 0,
+                    "examples": [
+                        6917
+                    ]
+                }
+            },
+            "additionalProperties": true
+        },
+        "packetLoss": {
+            "$id": "#/properties/packetLoss",
+            "type": "number",
+            "title": "The packetLoss schema",
+            "description": "An explanation about the purpose of this instance.",
+            "default": 0,
+            "examples": [
+                0
+            ]
+        }
+    },
+    "additionalProperties": true
+}

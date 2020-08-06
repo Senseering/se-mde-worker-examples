@@ -1,0 +1,45 @@
+{
+    "credentials": "3ac87900-d7c4-11ea-9385-470dd8027d4e:1288387725f54f43b19badc33e0834d2",
+    "url": "https://djikstra.justus.senseering.net",
+    "settings": {
+      "qualityOfService": 1,
+      "messageRetries": 3,
+      "messageTimeout": 200000
+    },
+    "payment": {
+      "fixCost": 0,
+      "isFixCostOnly": false
+    },
+    "profile": {
+      "name": "SpeedTest",
+      "location": {
+        "latitude": 52.5297268,
+        "longitude": 13.400391
+      }
+    },
+    "privKey": "./env/key.pem",
+    "schema": {
+      "input": "./env/schema/input.json",
+      "output": "./env/schema/output.json"
+    },
+    "info": {
+      "worker": {
+        "description": "./env/description/worker.md",
+        "tags": [
+          "image processing"
+        ]
+      },
+      "input": {
+        "description": "./env/description/input.md",
+        "tags": [
+          "h"
+        ]
+      },
+      "output": {
+        "description": "./env/description/output.md",
+        "tags": [
+          ""
+        ]
+      }
+    }
+  }
