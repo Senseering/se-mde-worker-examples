@@ -11,10 +11,9 @@ let options = './options.json'
   try{
     await speedTest(options)
   } catch (err) {
-    debug(err)
+    debug(err.message)
   }
-  
-  let data_test 
+
   let data  
   do {
     try {
@@ -32,8 +31,6 @@ let options = './options.json'
       await sleep(1000*60*10)
     } catch (err) {
       debug(err.message);
-      debug("This error may occur if you did not execute init.js")
-      debug("Please execute init.js before executing index.js")
     }      
   } while (true)
 
