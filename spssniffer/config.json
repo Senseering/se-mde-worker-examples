@@ -1,10 +1,13 @@
 {
-  "credentials": "5393bb80-c4ef-11ea-9cb6-d5081ee6c157:acdcd7730aa24031a2e0a6349e99cc7f",
-  "url": "https://speedtest.wzl.senseering.net/",
+  "credentials": "05af7280-e21b-11ea-a497-a5f3a38a5fa1:dfac49b0ca5548b3bed20eb6ea8eae2a",
+  "url": "https://xft-2500-speed.wzl.senseering.net/",
   "settings": {
     "qualityOfService": 1,
     "messageRetries": 3,
     "messageTimeout": 5000
+  },
+  "meta": {
+
   },
   "payment": {
     "fixCost": 0,
