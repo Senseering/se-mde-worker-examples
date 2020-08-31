@@ -1,0 +1,111 @@
+{
+    "$schema": "http://json-schema.org/draft-07/schema",
+    "$id": "http://example.com/example.json",
+    "type": "object",
+    "title": "The root schema",
+    "description": "The root schema comprises the entire JSON document.",
+    "default": {},
+    "examples": [
+        {
+            "temperature": 23.700001,
+            "humidity": 53.599998,
+            "preassure": 1011.712891,
+            "magnet": {
+                "x": -83,
+                "y": 396,
+                "z": -451
+            }
+        }
+    ],
+    "required": [
+        "temperature",
+        "humidity",
+        "preassure",
+        "magnet"
+    ],
+    "properties": {
+        "temperature": {
+            "$id": "#/properties/temperature",
+            "type": "number",
+            "title": "The temperature schema",
+            "description": "An explanation about the purpose of this instance.",
+            "default": 0.0,
+            "examples": [
+                23.700001
+            ]
+        },
+        "humidity": {
+            "$id": "#/properties/humidity",
+            "type": "number",
+            "title": "The humidity schema",
+            "description": "An explanation about the purpose of this instance.",
+            "default": 0.0,
+            "examples": [
+                53.599998
+            ]
+        },
+        "preassure": {
+            "$id": "#/properties/preassure",
+            "type": "number",
+            "title": "The preassure schema",
+            "description": "An explanation about the purpose of this instance.",
+            "default": 0.0,
+            "examples": [
+                1011.712891
+            ]
+        },
+        "magnet": {
+            "$id": "#/properties/magnet",
+            "type": "object",
+            "title": "The magnet schema",
+            "description": "An explanation about the purpose of this instance.",
+            "default": {},
+            "examples": [
+                {
+                    "x": -83,
+                    "y": 396,
+                    "z": -451
+                }
+            ],
+            "required": [
+                "x",
+                "y",
+                "z"
+            ],
+            "properties": {
+                "x": {
+                    "$id": "#/properties/magnet/properties/x",
+                    "type": "integer",
+                    "title": "The x schema",
+                    "description": "An explanation about the purpose of this instance.",
+                    "default": 0,
+                    "examples": [
+                        -83
+                    ]
+                },
+                "y": {
+                    "$id": "#/properties/magnet/properties/y",
+                    "type": "integer",
+                    "title": "The y schema",
+                    "description": "An explanation about the purpose of this instance.",
+                    "default": 0,
+                    "examples": [
+                        396
+                    ]
+                },
+                "z": {
+                    "$id": "#/properties/magnet/properties/z",
+                    "type": "integer",
+                    "title": "The z schema",
+                    "description": "An explanation about the purpose of this instance.",
+                    "default": 0,
+                    "examples": [
+                        -451
+                    ]
+                }
+            },
+            "additionalProperties": true
+        }
+    },
+    "additionalProperties": true
+}
