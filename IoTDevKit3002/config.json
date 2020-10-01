@@ -1,0 +1,46 @@
+{
+  "credentials": "74f49610-ed34-11ea-b877-3f37cee929cc:df0021432b19475d8dde5993c85c1c75",
+  "url": "https://friesenplatz-4.wework.senseering.net/",
+  "settings": {
+    "qualityOfService": 1,
+    "messageRetries": 3,
+    "messageTimeout": 5000
+  },
+  "meta": {},
+  "payment": {
+    "fixCost": 0,
+    "isFixCostOnly": false
+  },
+  "profile": {
+    "name": "6th Common Area",
+    "location": {
+      "latitude": 50.940822,
+      "longitude": 6.939813
+    }
+  },
+  "privKey": "./env/key.pem",
+  "schema": {
+    "input": "./env/schema/input.json",
+    "output": "./env/schema/output.json"
+  },
+  "info": {
+    "worker": {
+      "description": "./env/description/worker.md",
+      "tags": [
+        "sps"
+      ]
+    },
+    "input": {
+      "description": "./env/description/input.md",
+      "tags": [
+        "h"
+      ]
+    },
+    "output": {
+      "description": "./env/description/output.md",
+      "tags": [
+        ""
+      ]
+    }
+  }
+}

@@ -1,6 +1,6 @@
 {
-  "credentials": "05af7280-e21b-11ea-a497-a5f3a38a5fa1:dfac49b0ca5548b3bed20eb6ea8eae2a",
-  "url": "https://xft-2500-speed.wzl.senseering.net/",
+  "credentials": "6e5fb5f0-ed34-11ea-b877-3f37cee929cc:17036385440f4d6487a300f427c2619a",
+  "url": "https://friesenplatz-4.wework.senseering.net/",
   "settings": {
     "qualityOfService": 1,
     "messageRetries": 3,
@@ -12,7 +12,7 @@
     "isFixCostOnly": false
   },
   "profile": {
-    "name": "EnvWeworkFriesenplz",
+    "name": "Room 2_101",
     "location": {
       "latitude": 50.940822,
       "longitude": 6.939813

@@ -11,17 +11,16 @@ let worker = new Worker();
 
 let config = './config.json';
 
-const wss = new WebSocket.Server({ port: 3001 });
+const wss = new WebSocket.Server({ port: 3003 });
 
 (async function () {
-    //await worker.connect(config)
+    await worker.connect(config)
 
     wss.on('connection', async function connection(ws) {
-        ws.on('message', function incoming(message) {
+        ws.on('message', async function incoming(message) {
             console.log('received: %s', message);
-            await worker.publish(message, { ttl: 1000 * 60 * 60 * 24 })
+            await worker.publish(JSON.parse(message))
         });
-        ws.send('something');
     });
     //await worker.disconnect()
 })();
