@@ -1,11 +1,11 @@
 const speedTest = require('speedtest-net');
-let Worker = require('@senseering/worker');
+let Worker = require('../../worker_js');
 const debug = require("debug")("speedtest");
 const sleep = ms => new Promise(resolve => setTimeout(resolve, ms))
 
 let speed_test = new Worker()
 let config = './config.json';
-let options = './options.json'
+let options = './options.json';
 
 (async () => {
   try{
@@ -19,10 +19,17 @@ let options = './options.json'
     try {
       debug("Performing Speedtest")
       data = await speedTest()
+      debug("Data:")
+      debug(data)
       debug("Building data packet")
       delete data.timestamp
+      if (data.packetLoss === undefined){
+        debug("Setting Packet Loss to 0")
+        data.packetLoss = 0
+      }
       debug("Connecting to manager")
       await speed_test.connect(config)
+
       debug("Publishing data")
       await speed_test.publish(data, {price: 0})
       debug("Disconneting from manager")
