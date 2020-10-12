@@ -1,6 +1,6 @@
 {
-    "credentials": "3ac87900-d7c4-11ea-9385-470dd8027d4e:1288387725f54f43b19badc33e0834d2",
-    "url": "https://djikstra.justus.senseering.net",
+    "credentials": "7d5ac560-06ff-11eb-a7ff-d52f6496a726:0767e10ad5984106a5189e1fb55a11f2",
+    "url": "https://geraetemanagement.felix.senseering.net",
     "settings": {
       "qualityOfService": 1,
       "messageRetries": 3,
@@ -41,5 +41,6 @@
           ""
         ]
       }
-    }
+    },
+    "meta": {}
   }
