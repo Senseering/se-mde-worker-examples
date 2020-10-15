@@ -1,17 +1,18 @@
 {
-  "credentials": "2f708090-c502-11ea-85dd-6990d19a77c0:1dd4bb3a2b474b9a9c94816b786cddae",
-  "url": "https://iota.wzl.senseering.net/",
+  "credentials": "092f4d60-0eb0-11eb-a7fd-d7158ac8be52:ebd3a9a759074e6e810109faa4554d68",
+  "url": "https://manager.owner.senseering.net/",
   "settings": {
     "qualityOfService": 1,
     "messageRetries": 3,
-    "messageTimeout": 200000
+    "messageTimeout": 100000
   },
+  "meta": {},
   "payment": {
-    "fixCost": 24,
+    "fixCost": 0,
     "isFixCostOnly": true
   },
   "profile": {
-    "name": "hallowelt2",
+    "name": "Example Source",
     "location": {
       "latitude": 13.5297268,
       "longitude": 13.400391
@@ -19,27 +20,21 @@
   },
   "privKey": "./env/key.pem",
   "schema": {
-    "input": "./env/schema/input.json",
-    "output": "./env/schema/output.json"
+    "output": "./env/schema/output.json",
+    "input": "./env/schema/input.json"
   },
   "info": {
     "worker": {
       "description": "./env/description/worker.md",
-      "tags": [
-        "image processing"
-      ]
+      "tags": []
     },
     "input": {
       "description": "./env/description/input.md",
-      "tags": [
-        "h"
-      ]
+      "tags": []
     },
     "output": {
       "description": "./env/description/output.md",
-      "tags": [
-        ""
-      ]
+      "tags": []
     }
   }
 }

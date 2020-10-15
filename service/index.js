@@ -7,8 +7,12 @@ let worker = new Worker();
 (async function () {
     await worker.connect(config)
 
-    let data = { test: 'Hello World!' }
-    await worker.publish(data, { price: 0 })
+    let data = {
+        test: 3
+    }
+    await worker.publish(data, {
+        price: 0
+    })
 
     //publishes data only on demand
     let service = async (incomingData, log) => {
@@ -18,7 +22,10 @@ let worker = new Worker();
         /*if (typeof ('test') !== 'object') {
             throw new Error('Invalid data')
         }*/
-        return { data: data, price: 0 }
+        return {
+            data: data,
+            price: 0
+        }
     }
 
     worker.provide(service)
