@@ -12,6 +12,6 @@
   "dependencies": {
     "base64-img": "^1.0.4",
     "debug": "^4.1.1",
-    "@senseering/worker": "../../worker_js"
+    "@senseering/worker": "^1.4.1"
   }
 }
