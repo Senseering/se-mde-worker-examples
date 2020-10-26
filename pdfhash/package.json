@@ -1,0 +1,19 @@
+{
+  "name": "example_source",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "NODE_CONFIG_DIR='./config/' NODE_ENV='development' NODE_TLS_REJECT_UNAUTHORIZED='0' DEBUG=*,-follow-redirects node index.js",
+    "debug": "NODE_CONFIG_DIR='./config/' NODE_ENV='development' NODE_TLS_REJECT_UNAUTHORIZED='0' DEBUG=*,-follow-redirects node --nolazy --inspect-brk=9229 index.js"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "base64-img": "^1.0.4",
+    "crypto-js": "^4.0.0",
+    "debug": "^4.1.1",
+    "pdfreader": "^1.2.7",
+    "@senseering/worker": "1.4.2"
+  }
+}
