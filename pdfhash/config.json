@@ -1,0 +1,43 @@
+{
+  "credentials": "b17ffe60-1775-11eb-a55b-3d93a41950a9:e3bd7d07168048528121a1ad50fbc71a",
+  "url": "https://manager.owner.senseering.net/",
+  "settings": {
+    "qualityOfService": 1,
+    "messageRetries": 3,
+    "messageTimeout": 100000,
+    "storage": true,
+    "tangle": true,
+    "notifications": true
+  },
+  "meta": {},
+  "payment": {
+    "fixCost": 0,
+    "isFixCostOnly": true
+  },
+  "profile": {
+    "name": "Pdf hash",
+    "location": {
+      "latitude": 50.77961,
+      "longitude": 6.10041
+    }
+  },
+  "privKey": "./env/key.pem",
+  "schema": {
+    "output": "./env/schema/output.json",
+    "input": "./env/schema/input.json"
+  },
+  "info": {
+    "worker": {
+      "description": "./env/description/worker.md",
+      "tags": []
+    },
+    "input": {
+      "description": "./env/description/input.md",
+      "tags": []
+    },
+    "output": {
+      "description": "./env/description/output.md",
+      "tags": []
+    }
+  }
+}
