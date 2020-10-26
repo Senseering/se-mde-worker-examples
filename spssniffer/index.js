@@ -6,7 +6,7 @@ const bodyParser = require('body-parser');
 const fs = require('fs')
 
 
-let Worker = require('../../worker_js')
+let Worker = require('@senseering/worker')
 let worker = new Worker();
 
 let config = './config.json';
@@ -26,7 +26,7 @@ server.use(bodyParser.urlencoded({ extended: true }));
             spsdata[topic.name.replace(/\s/g,"").replace(/\./g,"").replace(/\(/g,"").replace(/\)/g,"").replace(/\-/g,"")] = topic.valueList.map(el=>{return el.val})
         }
         res.status(200).send()
-        await worker.publish(spsdata)
+        await worker.publish(spsdata, {ttl: 1000 * 60 * 60 *24})
     });
     server.listen(3001, () => console.log(`Node listening on port 3001  `))
     //await worker.disconnect()
