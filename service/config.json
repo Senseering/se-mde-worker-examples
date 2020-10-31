@@ -3,8 +3,11 @@
   "url": "https://manager.owner.senseering.net/",
   "settings": {
     "qualityOfService": 1,
-    "messageRetries": 2,
-    "messageTimeout": 20000
+    "messageRetries": 3,
+    "messageTimeout": 100000,
+    "storage": true,
+    "tangle": true,
+    "notifications": true
   },
   "meta": {},
   "payment": {

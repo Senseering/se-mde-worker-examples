@@ -2,8 +2,14 @@
   "credentials": "d7eb5d30-8dfd-11ea-ae54-5da7079424ea:981574c0128342c485f6069297d377e0",
   "url": "https://terminator.timo.senseering.net/",
   "settings": {
-    "qualityOfService": 1
+    "qualityOfService": 1,
+    "messageRetries": 3,
+    "messageTimeout": 100000,
+    "storage": true,
+    "tangle": true,
+    "notifications": true
   },
+  "meta": {},
   "payment": {
     "fixCost": 0,
     "isFixCostOnly": false
