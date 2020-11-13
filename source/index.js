@@ -19,6 +19,6 @@ let weights = [Math.random(), Math.random(), Math.random()];
         data.volume = Math.max(Math.min(((Math.random() * 80) * (1 - weights[1])) + (data.volume * weights[1]), 80), 0)
         data.ppm = Math.max(Math.min(((Math.random() * 20) * (1 - weights[2])) + (data.ppm * weights[2]), 40), 0)
         await worker.publish(data)
-        await new Promise(resolve => setTimeout(resolve, 1000))
+        await new Promise(resolve => setTimeout(resolve, 5000))
     }
 })();
