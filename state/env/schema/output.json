@@ -1,0 +1,22 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema",
+  "$id": "http://example.com/example.json",
+  "type": "object",
+  "required": [
+    "temperature",
+    "lightValue",
+    "street"
+  ],
+  "properties": {
+    "temperature": {
+      "type": "number"
+    },
+    "lightValue": {
+      "type": "number"
+    },
+    "street": {
+      "type": "string"
+    }
+  },
+  "additionalProperties": true
+}

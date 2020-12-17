@@ -1,0 +1,45 @@
+{
+  "credentials": "8febda70-3fa3-11eb-a11a-ebbc2dcb8a7d:2a9059668de94c74ba93e889c0864bc2",
+  "url": "https://newvis.devkristof.senseering.net",
+  "settings": {
+    "qualityOfService": 1,
+    "messageRetries": 3,
+    "messageTimeout": 100000,
+    "storage": true,
+    "tangle": true,
+    "notifications": true
+  },
+  "meta": {
+    "displayMee": "statetest"
+  },
+  "payment": {
+    "fixCost": 1,
+    "isFixCostOnly": true
+  },
+  "profile": {
+    "name": "state",
+    "location": {
+      "latitude": 13.5297268,
+      "longitude": 13.400391
+    }
+  },
+  "privKey": "./env/key.pem",
+  "schema": {
+    "output": "./env/schema/output.json",
+    "input": "./env/schema/input.json"
+  },
+  "info": {
+    "worker": {
+      "description": "./env/description/worker.md",
+      "tags": []
+    },
+    "input": {
+      "description": "./env/description/input.md",
+      "tags": []
+    },
+    "output": {
+      "description": "./env/description/output.md",
+      "tags": []
+    }
+  }
+}
