@@ -50,7 +50,7 @@ let publishStates = async function () {
         try {
             await publishStates()
             console.log(`recieved message of ${topic} with value ${value}`)
-            switch1.writeSync(value)
+            switch1.writeSync(value ? 1 : 0)
             await publishStates()
         } catch (err) {
             console.log(err)
@@ -61,7 +61,7 @@ let publishStates = async function () {
         try {
             await publishStates()
             console.log(`recieved message of ${topic} with value ${value}`)
-            switch1.writeSync(value)
+            switch2.writeSync(value ? 1 : 0)
             await publishStates()
         } catch (err) {
             console.log(err)
