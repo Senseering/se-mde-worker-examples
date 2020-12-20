@@ -47,17 +47,25 @@ let publishStates = async function () {
     await worker.state.init(initalSchema, initalState)
 
     worker.state.on('change', 'switch1', async (topic, value) => {
-        await publishStates()
-        console.log(`recieved message of ${topic} with value ${value}`)
-        switch1.writeSync(value)
-        await publishStates()
+        try {
+            await publishStates()
+            console.log(`recieved message of ${topic} with value ${value}`)
+            switch1.writeSync(value)
+            await publishStates()
+        } catch (err) {
+            console.log(err)
+        }
 
     })
     worker.state.on('change', 'switch2', async (topic, value) => {
-        await publishStates()
-        console.log(`recieved message of ${topic} with value ${value}`)
-        switch1.writeSync(value)
-        await publishStates()
+        try {
+            await publishStates()
+            console.log(`recieved message of ${topic} with value ${value}`)
+            switch1.writeSync(value)
+            await publishStates()
+        } catch (err) {
+            console.log(err)
+        }
     })
 
 
