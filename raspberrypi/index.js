@@ -11,8 +11,8 @@ let worker = new Worker();
 
 let publishStates = async function () {
     await worker.publish({
-        "switch1": !!switch1.readSync(),
-        "switch2": !!switch2.readSync()
+        "switch1": !!switch1.readSync() ? 1 : 0,
+        "switch2": !!switch2.readSync() ? 1 : 0
     })
 };
 
