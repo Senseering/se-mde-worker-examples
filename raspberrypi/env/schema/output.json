@@ -8,10 +8,10 @@
   ],
   "properties": {
     "switch1": {
-      "type": "boolean"
+      "type": "number"
     },
     "switch2": {
-      "type": "boolean"
+      "type": "number"
     }
   },
   "additionalProperties": true
