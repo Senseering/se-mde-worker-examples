@@ -1,6 +1,6 @@
 {
-  "credentials": "8febda70-3fa3-11eb-a11a-ebbc2dcb8a7d:2a9059668de94c74ba93e889c0864bc2",
-  "url": "https://newvis.devkristof.senseering.net",
+  "credentials": "8d88e420-42d8-11eb-b166-85ed719f1199:e8803030ab61418ba67a0c7ee4b4520d",
+  "url": "https://raspberry.kristof.senseering.net",
   "settings": {
     "qualityOfService": 1,
     "messageRetries": 3,

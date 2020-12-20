@@ -47,12 +47,14 @@ let publishStates = async function () {
     await worker.state.init(initalSchema, initalState)
 
     worker.state.on('change', 'switch1', (topic, value) => {
+        await publishStates()
         console.log(`recieved message of ${topic} with value ${value}`)
         switch1.writeSync(value)
         await publishStates()
 
     })
     worker.state.on('change', 'switch2', (topic, value) => {
+        await publishStates()
         console.log(`recieved message of ${topic} with value ${value}`)
         switch1.writeSync(value)
         await publishStates()
@@ -60,6 +62,7 @@ let publishStates = async function () {
 
 
     worker.state.on('change', 'main', (topic, value) => {
+        await publishStates()
         console.log(`recieved message of ${topic} with value ${value}`)
         if (value) {
             switch1 = new Gpio(4, 'out');
