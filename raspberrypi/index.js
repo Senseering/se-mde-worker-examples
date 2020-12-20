@@ -46,14 +46,14 @@ let publishStates = async function () {
     await worker.connect(config)
     await worker.state.init(initalSchema, initalState)
 
-    worker.state.on('change', 'switch1', (topic, value) => {
+    worker.state.on('change', 'switch1', async (topic, value) => {
         await publishStates()
         console.log(`recieved message of ${topic} with value ${value}`)
         switch1.writeSync(value)
         await publishStates()
 
     })
-    worker.state.on('change', 'switch2', (topic, value) => {
+    worker.state.on('change', 'switch2', async (topic, value) => {
         await publishStates()
         console.log(`recieved message of ${topic} with value ${value}`)
         switch1.writeSync(value)
@@ -61,7 +61,7 @@ let publishStates = async function () {
     })
 
 
-    worker.state.on('change', 'main', (topic, value) => {
+    worker.state.on('change', 'main', async (topic, value) => {
         await publishStates()
         console.log(`recieved message of ${topic} with value ${value}`)
         if (value) {
