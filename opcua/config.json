@@ -1,0 +1,43 @@
+{
+  "credentials": "092f4d60-0eb0-11eb-a7fd-d7158ac8be52:ebd3a9a759074e6e810109faa4554d68",
+  "url": "https://manager.owner.senseering.net/",
+  "settings": {
+    "qualityOfService": 1,
+    "messageRetries": 3,
+    "messageTimeout": 100000,
+    "storage": true,
+    "tangle": true,
+    "notifications": true
+  },
+  "meta": {},
+  "payment": {
+    "fixCost": 0,
+    "isFixCostOnly": true
+  },
+  "profile": {
+    "name": "Example Source",
+    "location": {
+      "latitude": 13.5297268,
+      "longitude": 13.400391
+    }
+  },
+  "privKey": "./env/key.pem",
+  "schema": {
+    "output": "./env/schema/output.json",
+    "input": "./env/schema/input.json"
+  },
+  "info": {
+    "worker": {
+      "description": "./env/description/worker.md",
+      "tags": []
+    },
+    "input": {
+      "description": "./env/description/input.md",
+      "tags": []
+    },
+    "output": {
+      "description": "./env/description/output.md",
+      "tags": []
+    }
+  }
+}
