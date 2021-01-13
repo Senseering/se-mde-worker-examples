@@ -1,0 +1,7 @@
+{
+    "userName": "user",
+    "password": "password",
+    "endpointUri": "opc.tcp://127.0.0.1:4840",
+    "securityMode": "3",
+    "securityPolicy": "http://opcfoundation.org/UA/SecurityPolicy#Basic128Rsa15"
+}
