@@ -77,6 +77,10 @@ async function timeout(ms) {
                         let buffer = Buffer.allocUnsafe(4)
                         buffer.writeUInt32BE(dataValue.value.value, 0)
                         data[channel] = buffer.readFloatBE()
+                    } else if (dataValue.value.toJSON().dataType === 'UInt16') {
+                        let buffer = Buffer.allocUnsafe(4)
+                        buffer.writeUInt16BE(dataValue.value.value, 0)
+                        data[channel] = buffer.readFloatBE()
                     } else {
                         data[channel] = dataValue.value.value
                     }
