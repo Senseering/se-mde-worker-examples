@@ -1,0 +1,5 @@
+{
+  "dependencies": {
+    "@senseering/worker": "^1.6.3"
+  }
+}

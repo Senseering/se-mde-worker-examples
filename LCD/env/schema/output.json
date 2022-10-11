@@ -1,0 +1,16 @@
+{
+    "$schema": "http://json-schema.org/draft-07/schema",
+    "type": "object",
+    "required": [
+      "co2",
+      "ch4"
+    ],
+    "properties": {
+      "co2": {
+        "type": "number"
+      },
+      "ch4": {
+        "type": "number"
+      }
+    }
+  }

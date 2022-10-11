@@ -1,0 +1,43 @@
+{
+    "credentials": "19e8f330-3f1a-11ed-b0a6-5d6eabe14f94:2c9763961fe44a6c9e146f5bed7719b2",
+    "url": "https://test-wzl.qbknrc6fd4hysx4.senseering.net/",
+    "settings": {
+      "qualityOfService": 1,
+      "messageRetries": 3,
+      "messageTimeout": 100000,
+      "storage": true,
+      "tangle": true,
+      "notifications": true
+    },
+    "meta": {},
+    "payment": {
+      "fixCost": 0,
+      "isFixCostOnly": true
+    },
+    "profile": {
+      "name": "Example Source 2",
+      "location": {
+        "latitude": 13.5297268,
+        "longitude": 13.400391
+      }
+    },
+    "privKey": "./env/key.pem",
+    "schema": {
+      "output": "./env/schema/output2.json",
+      "input": "./env/schema/input.json"
+    },
+    "info": {
+      "worker": {
+        "description": "./env/description/worker.md",
+        "tags": []
+      },
+      "input": {
+        "description": "./env/description/input.md",
+        "tags": []
+      },
+      "output": {
+        "description": "./env/description/output.md",
+        "tags": []
+      }
+    }
+  }
