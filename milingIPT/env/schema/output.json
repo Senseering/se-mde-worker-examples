@@ -1,0 +1,125 @@
+{
+    "$schema": "http://json-schema.org/draft-07/schema",
+    "$id": "http://example.com/example.json",
+    "type": "object",
+    "title": "The root schema",
+    "description": "The root schema comprises the entire JSON document.",
+    "default": {},
+    "examples": [
+        {
+            "Timestamp": 15210851.21,
+            "XPosition": 50.1,
+            "YPosition": 50.1,
+            "ZPosition": 50.1,
+            "APosition": 50.1,
+            "CPosition": 50.1,
+            "SpindleEffectivePower": 10.1,
+            "SpindleTorque": 500.1,
+            "SpindleValue": 10.1
+        }
+    ],
+    "required": [
+        "Timestamp",
+        "XPosition",
+        "YPosition",
+        "ZPosition",
+        "APosition",
+        "CPosition",
+        "SpindleEffectivePower",
+        "SpindleTorque",
+        "SpindleValue"
+    ],
+    "additionalProperties": true,
+    "properties": {
+        "Timestamp": {
+            "$id": "#/properties/Timestamp",
+            "type": "number",
+            "title": "The Timestamp schema",
+            "description": "An explanation about the purpose of this instance.",
+            "default": 0.0,
+            "examples": [
+                15210851.21
+            ]
+        },
+        "XPosition": {
+            "$id": "#/properties/XPosition",
+            "type": "number",
+            "title": "The XPosition schema",
+            "description": "An explanation about the purpose of this instance.",
+            "default": 0.0,
+            "examples": [
+                50.1
+            ]
+        },
+        "YPosition": {
+            "$id": "#/properties/YPosition",
+            "type": "number",
+            "title": "The YPosition schema",
+            "description": "An explanation about the purpose of this instance.",
+            "default": 0.0,
+            "examples": [
+                50.1
+            ]
+        },
+        "ZPosition": {
+            "$id": "#/properties/ZPosition",
+            "type": "number",
+            "title": "The ZPosition schema",
+            "description": "An explanation about the purpose of this instance.",
+            "default": 0.0,
+            "examples": [
+                50.1
+            ]
+        },
+        "APosition": {
+            "$id": "#/properties/APosition",
+            "type": "number",
+            "title": "The APosition schema",
+            "description": "An explanation about the purpose of this instance.",
+            "default": 0.0,
+            "examples": [
+                50.1
+            ]
+        },
+        "CPosition": {
+            "$id": "#/properties/CPosition",
+            "type": "number",
+            "title": "The CPosition schema",
+            "description": "An explanation about the purpose of this instance.",
+            "default": 0.0,
+            "examples": [
+                50.1
+            ]
+        },
+        "SpindleEffectivePower": {
+            "$id": "#/properties/SpindleEffectivePower",
+            "type": "number",
+            "title": "The SpindleEffectivePower schema",
+            "description": "An explanation about the purpose of this instance.",
+            "default": 0.0,
+            "examples": [
+                10.1
+            ]
+        },
+        "SpindleTorque": {
+            "$id": "#/properties/SpindleTorque",
+            "type": "number",
+            "title": "The SpindleTorque schema",
+            "description": "An explanation about the purpose of this instance.",
+            "default": 0.0,
+            "examples": [
+                500.1
+            ]
+        },
+        "SpindleValue": {
+            "$id": "#/properties/SpindleValue",
+            "type": "number",
+            "title": "The SpindleValue schema",
+            "description": "An explanation about the purpose of this instance.",
+            "default": 0.0,
+            "examples": [
+                10.1
+            ]
+        }
+    }
+}
